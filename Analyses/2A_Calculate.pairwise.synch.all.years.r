@@ -5,6 +5,7 @@
 library(codyn)
 library(dplyr)
 library(tidyr)
+library(here)
 
 #Open post-cleaning raw data (step 0) from Collins Ecology Letters paper
 setwd("H:/My Drive/Synchrony/Data/Tidy")
