@@ -1,3 +1,5 @@
+# Note: due to the large amount of pairwise species synchrony calculations, this script may take several hours to run
+
 #
 # Biblioteca
 #
@@ -13,8 +15,7 @@ set.seed(7220)
 i_am("Analyses/2A_Calculate.pairwise.synch.all.years.R")
 
 #Open post-cleaning data
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-focal.cover <- read.csv("focal.cover.csv")
+focal.cover <- read.csv(here("Data", "Tidy", "focal.cover.csv"))
 
 #Remove 2006, which was a pre-treatment year
 data <- focal.cover %>% filter(year != 2006)
@@ -232,6 +233,4 @@ df.tidy <- results.wp %>%
 
 
 #Save output
-#Set working directory
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-write.csv(df.tidy, "pairwise.synch.all.years.csv", row.names = F)
+write.csv(df.tidy, here("pairwise.synch.all.years.csv"), row.names = F)

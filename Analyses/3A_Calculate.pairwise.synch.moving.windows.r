@@ -13,9 +13,7 @@ set.seed(7220)
 i_am("Analyses/3A_Calculate.pairwise.synch.moving.windows.R")
 
 #Open post-cleaning tidy cover data that is only the focal species
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-data.full <- read.csv("focal.cover.csv")
-
+data.full <- read.csv(here("Data", "Tidy", "focal.cover.csv"))
 
 
 #We want 7 year windows
@@ -250,7 +248,4 @@ df.tidy <- results.wp %>%
     treatment == "XXW" ~ "+ Warming"))
 
 #Save output
-#Set working directory
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-write.csv(df.tidy, "pairwise.synch.window.7.years.csv", row.names = F)
-
+write.csv(df.tidy, here("pairwise.synch.window.7.years.csv"), row.names = F)

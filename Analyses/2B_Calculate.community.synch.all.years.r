@@ -12,17 +12,14 @@ set.seed(7220)
 #Establish file location
 i_am("Analyses/2B_Calculate.community.synch.all.years.R")
 
-#Open post-cleaning data from Collins Ecology Letters paper
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-focal.cover <- read.csv("focal.cover.csv")
+#Open post-cleaning data
+focal.cover <- read.csv(here("Data", "Tidy", "focal.cover.csv"))
 
 #Remove 2006, which was a pre-treatment year
 cover.experimental.years <- focal.cover %>% filter(year != 2006)
 
 #Check that the species are only the focal species
 unique(focal.cover$NWT_code)
-
-
 
 bn <-10000
 
@@ -92,6 +89,4 @@ VR.tidy$window <- paste(min(cover.experimental.years$year),
 VR.tidy$bn <-bn
 
 #Save output
-#Set working directory
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-write.csv(VR.tidy, "community.synch.all.years.csv", row.names = F)
+write.csv(VR.tidy, here("community.synch.all.years.csv"), row.names = F)
