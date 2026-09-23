@@ -7,6 +7,9 @@ library(grid)
 library(magick)
 library(here)
 
+#Establish file location
+i_am("Analyses/6_Fig.1_Part.4_Patchwork.plots.R")
+
 #JPGs - Read and upscale field photo
 setwd("H:/My Drive/Synchrony/Graphics")
 Fig.1B_img <- image_read("Fig.1B_Field.photo.cropped.jpg")

@@ -11,6 +11,9 @@ library(here)
 
 set.seed(7220)
 
+#Establish file location
+i_am("5_Calculate.hill.numbers.Q1.Q2.R")
+
 # Open post-cleaning tidy data that is only the focal species
 setwd("H:/My Drive/Synchrony/Data/Tidy")
 s <- read.csv("focal.cover.csv") # This is the hit count data for focal species

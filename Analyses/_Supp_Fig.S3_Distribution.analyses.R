@@ -14,6 +14,9 @@ library(ggtext)
 library(performance)
 library(here)
 
+#Establish file location
+i_am("Analyses/_Supp_Fig.S3_Distribution.analyses.R")
+
 # Load & wrangle data
 setwd("H:/My Drive/Synchrony/Data/Tidy")
 dens <- read.csv("pairwise.synch.window.7.years.replicates.csv",

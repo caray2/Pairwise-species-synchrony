@@ -15,7 +15,6 @@ library(ggnewscale)
 library(ggtext)
 library(here)
 
-#Set seed
 set.seed(7220)
 
 #Establish file location

@@ -4,6 +4,8 @@ library(ggplot2)
 library(ggtext)
 library(here)
 
+#Establish file location
+i_am("Analyses/7_Fig.2_Patchwork.plots.R")
 
 setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
 Fig.2A <-readRDS("Figure.2A_All.years.spiders.rds")

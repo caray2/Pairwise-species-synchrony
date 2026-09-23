@@ -13,6 +13,9 @@ library(here)
 
 set.seed(7220)
 
+#Establish file location
+i_am("Analyses/_10_Fig.5_Part.1_VR.R")
+
 #Set working directory
 setwd("H:/My Drive/Synchrony/Data/Tidy")
 vr.repl <- read.csv("community.synch.window.7.years.replicates.csv")

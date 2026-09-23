@@ -5,6 +5,9 @@ library(patchwork)
 library(ggplot2)
 library(here)
 
+#Establish file location
+i_am("Analyses/_10_Fig.5_Part.4_Patchwork.plots.R")
+
 setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
 vr.plot <- readRDS("Figure.5A.rds")
 q1.2006.plot <- readRDS("Figure.5B.rds")

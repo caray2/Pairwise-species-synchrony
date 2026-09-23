@@ -7,11 +7,16 @@ library(dplyr)
 library(tidyr)
 library(here)
 
+set.seed(7220)
+
+#Establish file location
+i_am("Analyses/3A_Calculate.pairwise.synch.moving.windows.R")
+
 #Open post-cleaning tidy cover data that is only the focal species
 setwd("H:/My Drive/Synchrony/Data/Tidy")
 data.full <- read.csv("focal.cover.csv")
 
-set.seed(7220)
+
 
 #We want 7 year windows
 #2007-2013 #Window 1

@@ -15,6 +15,9 @@ library(here)
 
 set.seed(7220)
 
+#Establish file location
+i_am("Analyses/_10_Fig.5_Part.3_Q2.R")
+
 #Set working directory
 setwd("H:/My Drive/Synchrony/Data/Tidy")
 hill.repl <-read.csv("hill.numbers.with.replicates.csv")

@@ -5,6 +5,9 @@ library(ggplot2)
 library(dplyr)
 library(here)
 
+#Establish file location
+i_am("Analyses/_Supp_Fig.S1_Moving.windows.schematic.R")
+
 # Create data for the windows
 windows_df <- data.frame(
   window = c("Full experiment time period", 

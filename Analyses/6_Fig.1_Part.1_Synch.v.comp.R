@@ -9,6 +9,9 @@ library(here)
 
 set.seed(7220)
 
+#Establish file location
+i_am("Analyses/6_Fig.1_Part.1_Synch.v.comp.R")
+
 #Create an example of synchronous versus compensatory dynamics
 #First generate a compensatory plot
 x <- seq(-2*pi,2*pi,by=0.05)

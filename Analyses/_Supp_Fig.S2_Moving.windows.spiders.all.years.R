@@ -15,8 +15,10 @@ library(ggnewscale)
 library(ggtext)
 library(here)
 
-#Set seed
 set.seed(7220)
+
+#Establish file location
+i_am("Analyses/_Supp_Fig.S2_Moving.windows.spiders.all.years.R")
 
 #Set working directory
 setwd("H:/My Drive/Synchrony/Data/Tidy")

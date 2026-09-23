@@ -14,7 +14,8 @@ library(here)
 # Set seed
 set.seed(7220)
 
-# Load Data 
+#Establish file location
+i_am("Analyses/9_Fig.4_Multinomial.moving.windows.R")
 
 # Set working directory
 setwd("H:/My Drive/Synchrony/data/Tidy")

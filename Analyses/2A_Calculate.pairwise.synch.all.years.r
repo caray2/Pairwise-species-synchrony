@@ -7,6 +7,8 @@ library(dplyr)
 library(tidyr)
 library(here)
 
+set.seed(7220)
+
 #Establish file location
 i_am("Analyses/2A_Calculate.pairwise.synch.all.years.R")
 
@@ -16,8 +18,6 @@ focal.cover <- read.csv("focal.cover.csv")
 
 #Remove 2006, which was a pre-treatment year
 data <- focal.cover %>% filter(year != 2006)
-
-set.seed(7220)
 
 #Set up for loop parameters
 

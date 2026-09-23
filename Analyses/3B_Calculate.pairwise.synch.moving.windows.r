@@ -16,8 +16,6 @@ i_am("Analyses/3B_Calculate.pairwise.synch.moving.windows.R")
 setwd("H:/My Drive/Synchrony/Data/Tidy")
 data.full <- read.csv("focal.cover.csv")
 
-
-
 #We want 7 year windows
 #2007-2013 #Window 1
 #2008-2014 #Window 2
