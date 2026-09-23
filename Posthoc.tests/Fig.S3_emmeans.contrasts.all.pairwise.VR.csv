@@ -1,0 +1,7 @@
+contrast,estimate,SE,df,z.ratio,p.value,treatment1,treatment2,is.significant,label,trt.name.1,trt.name.2,contrast.name,bracket_order,data.used,reporting
+XXW - PXX,-0.054,0.018,Inf,-3.006880517791061,0.0141,XXW,PXX,1,p = 0.014,Warming,Snow,Warming - Snow,1,pairwise.VR.all.windows,"For the contrast, Warming - Snow: est = -0.054, SE = 0.018, p = 0.014."
+XXW - XNX,-0.069,0.018,Inf,-3.8777213360603806,6e-4,XXW,XNX,1,p < 0.001,Warming,Nitrogen,Warming - Nitrogen,2,pairwise.VR.all.windows,"For the contrast, Warming - Nitrogen: est = -0.069, SE = 0.018, p < 0.001."
+XXX - XXW,0.026,0.018,Inf,1.4496797343402559,0.4683,XXX,XXW,0,p = 0.468,Control,Warming,Control - Warming,NA,pairwise.VR.all.windows,
+XXX - PXX,-0.028,0.018,Inf,-1.557200783464241,0.4033,XXX,PXX,0,p = 0.403,Control,Snow,Control - Snow,NA,pairwise.VR.all.windows,
+XXX - XNX,-0.043,0.018,Inf,-2.4280416017189825,0.0719,XXX,XNX,0,p = 0.072,Control,Nitrogen,Control - Nitrogen,NA,pairwise.VR.all.windows,
+PXX - XNX,-0.016,0.018,Inf,-0.870840818250168,0.82,PXX,XNX,0,p = 0.820,Snow,Nitrogen,Snow - Nitrogen,NA,pairwise.VR.all.windows,

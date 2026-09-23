@@ -1,0 +1,13 @@
+contrast,n.year.start,estimate,SE,df,z.ratio,p.value,is.significant,contrast.name,window,treat1,treat2,emmean.trt.1,emmean.trt.2,contrast.type,reporting
+XXX - XXW,1,-0.057,0.094,Inf,-0.601,0.932,0,Control - Warming,2007-2013,XXX,XXW,0.518,0.575,VR,
+XXX - PXX,1,0.331,0.094,Inf,3.502,0.003,1,Control - Snow,2007-2013,XXX,PXX,0.518,0.188,VR,"In the window 2007-2013, for the contrast Control - Snow (est = 0.331, SE = 0.094, p = 0.003)"
+XXX - XNX,1,0.075,0.094,Inf,0.794,0.857,0,Control - Nitrogen,2007-2013,XXX,XNX,0.518,0.443,VR,
+XXW - PXX,1,0.388,0.094,Inf,4.103,< 0.001,1,Warming - Snow,2007-2013,XXW,PXX,0.575,0.188,VR,"In the window 2007-2013, for the contrast Warming - Snow (est = 0.388, SE = 0.094, p = < 0.001)"
+XXW - XNX,1,0.132,0.094,Inf,1.396,0.502,0,Warming - Nitrogen,2007-2013,XXW,XNX,0.575,0.443,VR,
+PXX - XNX,1,-0.256,0.094,Inf,-2.708,0.034,1,Snow - Nitrogen,2007-2013,PXX,XNX,0.188,0.443,VR,"In the window 2007-2013, for the contrast Snow - Nitrogen (est = -0.256, SE = 0.094, p = 0.034)"
+XXX - XXW,12,0.059,0.094,Inf,0.629,0.923,0,Control - Warming,2018-2024,XXX,XXW,0.382,0.323,VR,
+XXX - PXX,12,0.026,0.094,Inf,0.275,0.993,0,Control - Snow,2018-2024,XXX,PXX,0.382,0.356,VR,
+XXX - XNX,12,0.112,0.094,Inf,1.187,0.635,0,Control - Nitrogen,2018-2024,XXX,XNX,0.382,0.27,VR,
+XXW - PXX,12,-0.033,0.094,Inf,-0.354,0.985,0,Warming - Snow,2018-2024,XXW,PXX,0.323,0.356,VR,
+XXW - XNX,12,0.053,0.094,Inf,0.559,0.944,0,Warming - Nitrogen,2018-2024,XXW,XNX,0.323,0.27,VR,
+PXX - XNX,12,0.086,0.094,Inf,0.912,0.798,0,Snow - Nitrogen,2018-2024,PXX,XNX,0.356,0.27,VR,

@@ -1,0 +1,37 @@
+contrast,aff.name,window.n,estimate,SE,df,z.ratio,p.value,is.significant,contrast.name,window,contrast.type,reporting
+XXW - XXX,None,1,0.036,0.038,Inf,0.941,0.783,0,Warming - Control,2007-2013,year.point,
+PXX - XXX,None,1,-0.151,0.054,Inf,-2.813,0.025,1,Snow - Control,2007-2013,year.point,"For the contrast, Snow - Control, and the affiliation, None, in the year, 1, (est = -0.151, SE = 0.054, p = 0.025)"
+PXX - XXW,None,1,-0.187,0.051,Inf,-3.632,0.002,1,Snow - Warming,2007-2013,year.point,"For the contrast, Snow - Warming, and the affiliation, None, in the year, 1, (est = -0.187, SE = 0.051, p = 0.002)"
+XNX - XXX,None,1,-0.25,0.059,Inf,-4.246,< 0.001,1,Nitrogen - Control,2007-2013,year.point,"For the contrast, Nitrogen - Control, and the affiliation, None, in the year, 1, (est = -0.250, SE = 0.059, p = < 0.001)"
+XNX - XXW,None,1,-0.286,0.057,Inf,-5.027,< 0.001,1,Nitrogen - Warming,2007-2013,year.point,"For the contrast, Nitrogen - Warming, and the affiliation, None, in the year, 1, (est = -0.286, SE = 0.057, p = < 0.001)"
+XNX - PXX,None,1,-0.099,0.068,Inf,-1.45,0.468,0,Nitrogen - Snow,2007-2013,year.point,
+XXW - XXX,Compensatory,1,-0.017,0.034,Inf,-0.505,0.958,0,Warming - Control,2007-2013,year.point,
+PXX - XXX,Compensatory,1,0.093,0.046,Inf,2.001,0.187,0,Snow - Control,2007-2013,year.point,
+PXX - XXW,Compensatory,1,0.11,0.045,Inf,2.426,0.072,0,Snow - Warming,2007-2013,year.point,
+XNX - XXX,Compensatory,1,0.064,0.043,Inf,1.498,0.439,0,Nitrogen - Control,2007-2013,year.point,
+XNX - XXW,Compensatory,1,0.081,0.042,Inf,1.951,0.207,0,Nitrogen - Warming,2007-2013,year.point,
+XNX - PXX,Compensatory,1,-0.029,0.052,Inf,-0.553,0.946,0,Nitrogen - Snow,2007-2013,year.point,
+XXW - XXX,Synchrony,1,-0.019,0.018,Inf,-1.022,0.736,0,Warming - Control,2007-2013,year.point,
+PXX - XXX,Synchrony,1,0.058,0.033,Inf,1.774,0.286,0,Snow - Control,2007-2013,year.point,
+PXX - XXW,Synchrony,1,0.077,0.03,Inf,2.541,0.054,0,Snow - Warming,2007-2013,year.point,
+XNX - XXX,Synchrony,1,0.186,0.049,Inf,3.78,< 0.001,1,Nitrogen - Control,2007-2013,year.point,"For the contrast, Nitrogen - Control, and the affiliation, Synchrony, in the year, 1, (est = 0.186, SE = 0.049, p = < 0.001)"
+XNX - XXW,Synchrony,1,0.204,0.048,Inf,4.303,< 0.001,1,Nitrogen - Warming,2007-2013,year.point,"For the contrast, Nitrogen - Warming, and the affiliation, Synchrony, in the year, 1, (est = 0.204, SE = 0.048, p = < 0.001)"
+XNX - PXX,Synchrony,1,0.128,0.055,Inf,2.336,0.09,0,Nitrogen - Snow,2007-2013,year.point,
+XXW - XXX,None,12,0.099,0.05,Inf,1.999,0.188,0,Warming - Control,2018-2024,year.point,
+PXX - XXX,None,12,-0.035,0.058,Inf,-0.606,0.93,0,Snow - Control,2018-2024,year.point,
+PXX - XXW,None,12,-0.134,0.05,Inf,-2.695,0.035,1,Snow - Warming,2018-2024,year.point,"For the contrast, Snow - Warming, and the affiliation, None, in the year, 12, (est = -0.134, SE = 0.050, p = 0.035)"
+XNX - XXX,None,12,-0.026,0.057,Inf,-0.455,0.969,0,Nitrogen - Control,2018-2024,year.point,
+XNX - XXW,None,12,-0.125,0.049,Inf,-2.567,0.05,0,Nitrogen - Warming,2018-2024,year.point,
+XNX - PXX,None,12,0.009,0.058,Inf,0.161,0.999,0,Nitrogen - Snow,2018-2024,year.point,
+XXW - XXX,Compensatory,12,-0.056,0.039,Inf,-1.42,0.487,0,Warming - Control,2018-2024,year.point,
+PXX - XXX,Compensatory,12,0.009,0.045,Inf,0.203,0.997,0,Snow - Control,2018-2024,year.point,
+PXX - XXW,Compensatory,12,0.065,0.038,Inf,1.694,0.327,0,Snow - Warming,2018-2024,year.point,
+XNX - XXX,Compensatory,12,0.037,0.048,Inf,0.766,0.87,0,Nitrogen - Control,2018-2024,year.point,
+XNX - XXW,Compensatory,12,0.093,0.042,Inf,2.209,0.121,0,Nitrogen - Warming,2018-2024,year.point,
+XNX - PXX,Compensatory,12,0.028,0.048,Inf,0.585,0.937,0,Nitrogen - Snow,2018-2024,year.point,
+XXW - XXX,Synchrony,12,-0.044,0.034,Inf,-1.282,0.575,0,Warming - Control,2018-2024,year.point,
+PXX - XXX,Synchrony,12,0.026,0.042,Inf,0.622,0.925,0,Snow - Control,2018-2024,year.point,
+PXX - XXW,Synchrony,12,0.07,0.036,Inf,1.95,0.207,0,Snow - Warming,2018-2024,year.point,
+XNX - XXX,Synchrony,12,-0.011,0.036,Inf,-0.308,0.99,0,Nitrogen - Control,2018-2024,year.point,
+XNX - XXW,Synchrony,12,0.033,0.028,Inf,1.166,0.649,0,Nitrogen - Warming,2018-2024,year.point,
+XNX - PXX,Synchrony,12,-0.037,0.037,Inf,-0.996,0.752,0,Nitrogen - Snow,2018-2024,year.point,

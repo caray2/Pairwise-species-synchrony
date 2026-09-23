@@ -1,0 +1,7 @@
+contrast,estimate,SE,df,z.ratio,p.value,is.significant,contrast.name,treat1,treat2,slope.treat1,slope.treat2,contrast.type,reporting
+XXW - XXX,-0.011,0.008,Inf,-1.345,0.534,0,Warming - Control,XXW,XXX,-0.023,-0.012,vr.slope,
+PXX - XXX,0.028,0.008,Inf,3.53,0.002,1,Snow - Control,PXX,XXX,0.015,-0.012,vr.slope,"For the slope contrast for, Snow - Control, (est = 0.028, SE = 0.008, p = 0.002)"
+PXX - XXW,0.038,0.008,Inf,4.876,< 0.001,1,Snow - Warming,PXX,XXW,0.015,-0.023,vr.slope,"For the slope contrast for, Snow - Warming, (est = 0.038, SE = 0.008, p = < 0.001)"
+XNX - XXX,-0.003,0.008,Inf,-0.43,0.973,0,Nitrogen - Control,XNX,XXX,-0.016,-0.012,vr.slope,
+XNX - XXW,0.007,0.008,Inf,0.916,0.797,0,Nitrogen - Warming,XNX,XXW,-0.016,-0.023,vr.slope,
+XNX - PXX,-0.031,0.008,Inf,-3.96,< 0.001,1,Nitrogen - Snow,XNX,PXX,-0.016,0.015,vr.slope,"For the slope contrast for, Nitrogen - Snow, (est = -0.031, SE = 0.008, p = < 0.001)"

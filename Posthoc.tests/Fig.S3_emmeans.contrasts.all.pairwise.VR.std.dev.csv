@@ -1,0 +1,7 @@
+contrast,estimate,SE,df,z.ratio,p.value,contrast.name,is.significant,treatment1,treatment2,label,bracket_order,reporting
+XXW - PXX,-0.046,0.014,Inf,-3.381,0.004,Warming - Snow,1,XXW,PXX,p = 0.004,1,"For the contrast, Warming - Snow, (est = -0.046, SE = 0.014, p = 0.004)"
+XXW - XNX,-0.04,0.014,Inf,-2.955,0.017,Warming - Nitrogen,1,XXW,XNX,p = 0.017,2,"For the contrast, Warming - Nitrogen, (est = -0.040, SE = 0.014, p = 0.017)"
+XXX - XXW,0.017,0.014,Inf,1.264,0.586,Control - Warming,0,XXX,XXW,p = 0.586,NA,
+XXX - PXX,-0.029,0.014,Inf,-2.117,0.148,Control - Snow,0,XXX,PXX,p = 0.148,NA,
+XXX - XNX,-0.023,0.014,Inf,-1.691,0.329,Control - Nitrogen,0,XXX,XNX,p = 0.329,NA,
+PXX - XNX,0.006,0.014,Inf,0.426,0.974,Snow - Nitrogen,0,PXX,XNX,p = 0.974,NA,
