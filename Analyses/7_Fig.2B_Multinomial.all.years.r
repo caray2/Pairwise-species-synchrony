@@ -7,6 +7,7 @@ library(mclogit)
 library(ggtext)
 library(emmeans)
 library(readr)
+library(here)
 
 #Set seed
 set.seed(7220)

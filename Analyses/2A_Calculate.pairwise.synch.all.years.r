@@ -7,7 +7,10 @@ library(dplyr)
 library(tidyr)
 library(here)
 
-#Open post-cleaning raw data (step 0) from Collins Ecology Letters paper
+#Establish file location
+i_am("Analyses/2A_Calculate.pairwise.synch.all.years.R")
+
+#Open post-cleaning data
 setwd("H:/My Drive/Synchrony/Data/Tidy")
 focal.cover <- read.csv("focal.cover.csv")
 

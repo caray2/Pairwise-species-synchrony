@@ -5,6 +5,7 @@ library(png)
 library(ggplot2)
 library(grid)
 library(magick)
+library(here)
 
 #JPGs - Read and upscale field photo
 setwd("H:/My Drive/Synchrony/Graphics")

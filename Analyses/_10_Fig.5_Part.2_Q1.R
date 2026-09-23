@@ -10,12 +10,19 @@ library(emmeans)
 library(glmmTMB)
 library(DHARMa)
 library(performance)
+library(here)
+
+set.seed(7220)
+
+#Establish file location
+i_am("Analyses/_10_Fig.5_Part.2_Q1.R")
+
 
 #Set working directory
 setwd("H:/My Drive/Synchrony/Data/Tidy")
 hill.repl <-read.csv("hill.numbers.with.replicates.csv")
 
-set.seed(7220)
+
 
 
 str(hill.repl)

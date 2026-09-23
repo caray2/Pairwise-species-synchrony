@@ -12,6 +12,7 @@ library(DHARMa)
 library(ggsignif)
 library(ggtext)
 library(performance)
+library(here)
 
 # Load & wrangle data
 setwd("H:/My Drive/Synchrony/Data/Tidy")

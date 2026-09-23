@@ -7,6 +7,11 @@ library(dplyr)
 library(tidyr)
 library(here)
 
+set.seed(7220)
+
+#Establish file location
+i_am("Analyses/2B_Calculate.community.synch.all.years.R")
+
 #Open post-cleaning data from Collins Ecology Letters paper
 setwd("H:/My Drive/Synchrony/Data/Tidy")
 focal.cover <- read.csv("focal.cover.csv")
@@ -17,7 +22,7 @@ cover.experimental.years <- focal.cover %>% filter(year != 2006)
 #Check that the species are only the focal species
 unique(focal.cover$NWT_code)
 
-set.seed(7220)
+
 
 bn <-10000
 

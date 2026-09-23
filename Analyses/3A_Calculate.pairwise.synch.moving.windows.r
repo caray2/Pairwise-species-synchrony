@@ -5,6 +5,7 @@
 library(codyn)
 library(dplyr)
 library(tidyr)
+library(here)
 
 #Open post-cleaning tidy cover data that is only the focal species
 setwd("H:/My Drive/Synchrony/Data/Tidy")
