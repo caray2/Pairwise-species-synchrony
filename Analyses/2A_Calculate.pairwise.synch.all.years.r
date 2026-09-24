@@ -233,4 +233,4 @@ df.tidy <- results.wp %>%
 
 
 #Save output
-write.csv(df.tidy, here("pairwise.synch.all.years.csv"), row.names = F)
+write.csv(df.tidy, here("Data", "Tidy", "pairwise.synch.all.years.csv"), row.names = F)

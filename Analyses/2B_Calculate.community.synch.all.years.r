@@ -89,4 +89,4 @@ VR.tidy$window <- paste(min(cover.experimental.years$year),
 VR.tidy$bn <-bn
 
 #Save output
-write.csv(VR.tidy, here("community.synch.all.years.csv"), row.names = F)
+write.csv(VR.tidy, here("Data", "Tidy", "community.synch.all.years.csv"), row.names = F)

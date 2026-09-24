@@ -230,4 +230,4 @@ df.tidy <- results.wp %>%
     treatment == "XXW" ~ "+ Warming"))
 
 #Save output
-write.csv(df.tidy, here("pairwise.synch.window.7.years.replicates.csv"), row.names = F)
+write.csv(df.tidy, here("Data", "Tidy", "pairwise.synch.window.7.years.replicates.csv"), row.names = F)

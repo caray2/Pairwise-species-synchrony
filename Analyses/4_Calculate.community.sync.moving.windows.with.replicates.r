@@ -116,6 +116,4 @@ df.tidy <- df.tidy %>%
   dplyr::select(start.year, end.year, window, n.year.start, treatment, treatment.name, replicate, block, plot, VR)
 
 #Save output
-#Set working directory
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-write.csv(df.tidy, "community.synch.window.7.years.replicates.csv", row.names = F)
+write.csv(df.tidy, here("Data", "Tidy", "community.synch.window.7.years.replicates.csv"), row.names = F)

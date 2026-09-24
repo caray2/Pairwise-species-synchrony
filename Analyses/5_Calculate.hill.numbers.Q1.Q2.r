@@ -102,5 +102,4 @@ hill.total <- hill.total %>%
 print(xtabs(~year + treatment, hill.total))
 
 # Save the annual Hill number data
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-write.csv(hill.total, "hill.numbers.with.replicates.csv", row.names = F)
+write.csv(hill.total, here("Data", "Tidy", "hill.numbers.with.replicates.csv"), row.names = F)
