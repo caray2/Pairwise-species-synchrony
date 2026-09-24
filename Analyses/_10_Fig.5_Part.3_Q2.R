@@ -155,8 +155,7 @@ emm.q2.contrasts.df <- emm.q2.contrasts.df %>%
          "SE", "df", "z.ratio", "p.value", "is.significant", "contrast.name", "reporting")  
 
 #Save dataframe
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(emm.q2.contrasts.df, "Fig.5E_q2.treatment.effect.temporal.csv")
+write_csv(emm.q2.contrasts.df, here("Posthoc.tests", "Fig.5E_q2.treatment.effect.temporal.csv"))
 
 #visualize the model
 #Treatment effect
@@ -230,8 +229,8 @@ q2.slope.pairs.df <- q2.slope.pairs.df %>%
   select("contrast.type", "contrast", "contrast.name", "estimate", "SE", "df", "z.ratio", "p.value", 
          "is.significant", "reporting")  
 
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(q2.slope.pairs.df, "Fig.5E_q2.emmeans.slope.contrasts.csv")
+#Save df
+write_csv(q2.slope.pairs.df, here("Posthoc.tests", "Fig.5E_q2.emmeans.slope.contrasts.csv"))
 
 #
 # Manuscript figures
@@ -282,8 +281,7 @@ q2.2006.plot <-
 q2.2006.plot
 
 # Save the plot as an RDS so I can combine it with other plots later
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-saveRDS(q2.2006.plot, "Figure.5D.rds")
+saveRDS(q2.2006.plot, here("Graphics", "RDS.plots", "Figure.5D.rds"))
 
 #Panel C: Create q2 plot over time without 2006
 
@@ -371,8 +369,7 @@ q2.temporal.plot <-
 q2.temporal.plot
 
 # Save the plot as an RDS so I can combine it with other plots later
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-saveRDS(q2.temporal.plot, "Figure.5E.rds")
+saveRDS(q2.temporal.plot, here("Graphics", "RDS.plots", "Figure.5E.rds"))
 
 # Create a dummy plot just for the legend
 legend.plot <- ggplot(
@@ -408,5 +405,4 @@ legend.plot
 shared.legend <- get_legend(legend.plot)
 
 # Save it as RDS
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-saveRDS(shared.legend, "Figure.5.shared.legend.rds")
+saveRDS(shared.legend, here("Graphics", "RDS.plots", "Figure.5.shared.legend.rds"))

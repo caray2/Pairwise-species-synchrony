@@ -73,11 +73,9 @@ full.dyn.ann <- arrangeGrob(Synchrony, Comp.D, ncol = 1,
 grid.arrange(full.dyn.ann)
 
 #Save graphic - must use png() or pdf() device for grid objects
-setwd("H:/My Drive/Synchrony/Graphics")
-png("Fig.1A_Syn.vs.Comp.png", height=4, width=5, units="in", res=500)
+png(here("Graphics", "Fig.1A_Syn.vs.Comp.png"), height=4, width=5, units="in", res=500)
 grid.draw(full.dyn.ann)
 dev.off()
 
 #Save as an RDS
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-saveRDS(full.dyn.ann, "Figure.1A.rds")
+saveRDS(full.dyn.ann, here("Graphics", "RDS.plots", "Figure.1A.rds"))

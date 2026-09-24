@@ -1,3 +1,5 @@
+# Code should be trimmed to essential components
+
 
 #Biblioteca
 
@@ -95,11 +97,6 @@ window_plot <- ggplot() +
 
 window_plot
 
-# Save the plot
-setwd("H:/My Drive/Synchrony/Graphics")
-#ggsave("Fig.S1_moving.window.diagram.png", window_plot, 
- #      width = 8, height = 6, dpi = 600, bg = "white")
-
 
 # Streamlined for poster
 
@@ -159,5 +156,5 @@ window_plot <- ggplot() +
 
 window_plot
 
-setwd("H:/My Drive/Synchrony/Graphics")
-ggsave("Schem.pdf", plot = window_plot, width = 8, height = 6)
+#Save plot
+ggsave(here("Graphics", "Schem.pdf"), plot = window_plot, width = 8, height = 6)

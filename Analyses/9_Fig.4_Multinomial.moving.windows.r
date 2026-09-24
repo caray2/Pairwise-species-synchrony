@@ -148,6 +148,7 @@ year.pairs.df$reporting <- ifelse(year.pairs.df$is.significant == 1,
                                            year.pairs.df$p.value),
           "")
 
+#Save df
 write_csv(year.pairs.df, here("Posthoc.tests", "Fig.4_emmeans.prob.contrasts.multinom.moving.windows.csv"))
 
 # Post-hoc Tests: Compare Slopes
@@ -209,6 +210,7 @@ slope.pairs.df$reporting <- ifelse(slope.pairs.df$is.significant == 1,
                                            slope.pairs.df$p.value),
                                    "")
 
+#Save df
 write_csv(slope.pairs.df, here("Posthoc.tests", "Fig.4_emmeans.slope.contrasts.multinom.moving.windows.csv"))
 
 # Get Predicted Probabilities

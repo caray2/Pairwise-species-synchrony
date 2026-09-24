@@ -76,6 +76,6 @@ Cover.bar <-
 Cover.bar
 
 #Save graphic
-setwd("H:/My Drive/Synchrony/Graphics")
-ggsave(plot=Cover.bar, "Fig.1C_Average.cover.png", height=5, width=6, units="in", dpi=600)
+ggsave(plot=Cover.bar, here("Graphics", "Fig.1C_Average.cover.png"),
+       height=5, width=6, units="in", dpi=600)
 

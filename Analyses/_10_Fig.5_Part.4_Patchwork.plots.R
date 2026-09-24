@@ -46,7 +46,5 @@ combined.plot <- vr.plot / row2 / row3 / legend +
 combined.plot
 
 # Save combined figure
-setwd("H:/My Drive/Synchrony/Graphics")
-
-ggsave("Fig.5_VR_q1_q2.png", combined.plot,
+ggsave(here("Graphics", "Fig.5_VR_q1_q2.png"), combined.plot,
        width = 14, height = 15, dpi = 600)

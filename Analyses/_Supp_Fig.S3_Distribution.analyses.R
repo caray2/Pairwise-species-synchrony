@@ -191,8 +191,8 @@ emm_pairs <- emm_pairs %>%
                                     contrast.name, estimate, SE, label),
                             ""))
 
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(emm_pairs, "Fig.S3_emmeans.contrasts.all.pairwise.VR.csv")
+#Save df
+write_csv(emm_pairs, here("Posthoc.tests", "Fig.S3_emmeans.contrasts.all.pairwise.VR.csv"))
 
 ##
 ## Plotting panel A!
@@ -370,8 +370,8 @@ pairs_sd$reporting <- ifelse(pairs_sd$is.significant == 1,
 
 pairs_sd
 
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(pairs_sd, "Fig.S3_emmeans.contrasts.all.pairwise.VR.std.dev.csv")
+#Save df
+write_csv(pairs_sd, here("Posthoc.tests", "Fig.S3_emmeans.contrasts.all.pairwise.VR.std.dev.csv"))
 
 sig_pairs_sd <- pairs_sd %>%
   filter(is.significant == 1)
@@ -419,11 +419,7 @@ combined.plot <- p1 / p2  +
 
 combined.plot
 
-
-setwd("H:/My Drive/Synchrony/Graphics")
-ggsave("Fig.S3_VR.Mean.Variance.png", combined.plot, width = 8, height = 6, dpi = 600)
-
-
-
+#Save plot
+ggsave(here("Graphics", "Fig.S3_VR.Mean.Variance.png"), combined.plot, width = 8, height = 6, dpi = 600)
 
 

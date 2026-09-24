@@ -24,6 +24,3 @@ ggsave(filename = here("Graphics", "Fig.2_Full.plot.1.png"),
        width = 8.8,
        height = 5.5,
        dpi = 600)
-
-out_file <- here("Graphics", "Fig.2_Full.plot.1.png")
-file.exists(out_file)   # should print TRUE

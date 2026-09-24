@@ -162,8 +162,8 @@ emm.vr.contrasts.df$reporting <- ifelse(emm.vr.contrasts.df$is.significant == 1,
                                                 emm.vr.contrasts.df$p.value),
                                         "") #otherwise blank
 
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(emm.vr.contrasts.df, "Fig.5A_community.VR.treatment.effect.temporal.csv")
+#Save df
+write_csv(emm.vr.contrasts.df, here("Posthoc.tests", "Fig.5A_community.VR.treatment.effect.temporal.csv"))
 
 #visualize the model
 #Treatment effect
@@ -246,9 +246,8 @@ vr.slope.pairs.df$reporting <- ifelse(vr.slope.pairs.df$is.significant == 1,
 
 vr.slope.pairs.df
 
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(vr.slope.pairs.df, "Fig.5A_community.VR.emmeans.slope.contrasts.csv")
-
+#Save df
+write_csv(vr.slope.pairs.df, here("Posthoc.tests", "Fig.5A_community.VR.emmeans.slope.contrasts.csv"))
 
 # Panel A: Plot vr with points for replicates
 

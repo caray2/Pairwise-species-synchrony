@@ -185,6 +185,6 @@ graph <- ggplot(df_select, aes(x=xstart, y=ystart, xend=xend, yend=yend)) +
 
 graph
 
-setwd("H:/My Drive/Synchrony/Graphics")
-ggsave("Fig.S2_moving.window.spiders.all.png", graph, width = 7, height = 8.5, dpi = 600)
+#Save graph
+ggsave(here("Graphics", "Fig.S2_moving.window.spiders.all.png"), graph, width = 7, height = 8.5, dpi = 600)
 

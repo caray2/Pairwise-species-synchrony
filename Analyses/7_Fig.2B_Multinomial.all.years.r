@@ -26,6 +26,7 @@ df <- data.frame(
   pair = df.all.years$pair,  # Species pair
   stringsAsFactors = FALSE
 )
+
 rm(df.all.years) #no longer needed
 
 # XXXXXXXXXXXXXXXXXXXX
@@ -95,8 +96,8 @@ pairs.df$reporting <- ifelse(pairs.df$is.significant == 1,
               "")
 
 
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(pairs.df, "Fig.2B_emmeans.prob.contrasts.multinom.all.years.csv")
+#Save df
+write_csv(pairs.df, here("Posthoc.tests", "Fig.2B_emmeans.prob.contrasts.multinom.all.years.csv"))
 
 
 #Get predicted probabilities from the multinomial model using emmeans. 
@@ -267,14 +268,13 @@ multinom.plot <- ggplot(pred.prob,
   guides(fill = guide_legend(nrow = 2, byrow = TRUE))
 multinom.plot
 
-setwd("H:/My Drive/Synchrony/Graphics")
-ggsave("Fig.2B_Multinom.all.years.png", multinom.plot, 
+#Save plot
+ggsave(here("Graphics", "Fig.2B_Multinom.all.years.png"), multinom.plot, 
        width = 3.5, height = 4.5, dpi = 600)
 
 
 #Save as an RDS
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-saveRDS(multinom.plot, "Figure.2B_Multinom.all.years.rds")
+saveRDS(multinom.plot, here("Graphics", "RDS.plots", "Figure.2B_Multinom.all.years.rds"))
 
 
 

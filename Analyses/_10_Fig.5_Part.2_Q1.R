@@ -154,8 +154,7 @@ emm.q1.contrasts.df <- emm.q1.contrasts.df %>%
          "SE", "df", "z.ratio", "p.value", "is.significant", "contrast.name", "reporting")  
 
 #Save dataframe
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(emm.q1.contrasts.df, "Fig.5C_q1.treatment.effect.temporal.csv")
+write_csv(emm.q1.contrasts.df, here("Posthoc.tests", "Fig.5C_q1.treatment.effect.temporal.csv"))
 
 #visualize the model
 #Treatment effect
@@ -227,8 +226,8 @@ q1.slope.pairs.df <- q1.slope.pairs.df %>%
   select("contrast.type", "contrast", "contrast.name", "estimate", "SE", "df", "z.ratio", "p.value", 
          "is.significant", "reporting")  
 
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(q1.slope.pairs.df, "Fig.5C_q1.emmeans.slope.contrasts.csv")
+#Save df
+write_csv(q1.slope.pairs.df, here("Posthoc.tests", "Fig.5C_q1.emmeans.slope.contrasts.csv"))
 
 #
 # Manuscript figures
@@ -279,8 +278,7 @@ q1.2006.plot <-
 q1.2006.plot
 
 # Save the plot as an RDS so I can combine it with other plots later
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-saveRDS(q1.2006.plot, "Figure.5B.rds")
+saveRDS(q1.2006.plot, here("Graphics", "RDS.plots", "Figure.5B.rds"))
 
 #Panel C: Create q1 plot over time without 2006
 
@@ -367,8 +365,6 @@ q1.temporal.plot <-
 q1.temporal.plot
 
 # Save the plot as an RDS so I can combine it with other plots later
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-#saveRDS(q1.temporal.plot, "Figure.6C.rds")
-ggsave("Figure.5C.pdf", plot = q1.temporal.plot, width = 8, height = 6)
+ggsave(here("Graphics", "RDS.plots", "Figure.5C.pdf"), plot = q1.temporal.plot, width = 8, height = 6)
 
 
