@@ -1,7 +1,6 @@
 
 # Biblioteca 
 
-#library(tidyverse)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -17,11 +16,8 @@ set.seed(7220)
 #Establish file location
 i_am("Analyses/9_Fig.4_Multinomial.moving.windows.R")
 
-# Set working directory
-setwd("H:/My Drive/Synchrony/data/Tidy")
-
 # Load moving windows synchrony data
-df.wind <- read.csv("pairwise.synch.window.7.years.csv", as.is = T)
+df.wind <- read.csv(here("Data", "Tidy", "pairwise.synch.window.7.years.csv"), as.is = T)
 
 # Make a window number column so that 2007, which is the start year of the first window, is window 1
 df.wind$window.n <- df.wind$start.year - 2006

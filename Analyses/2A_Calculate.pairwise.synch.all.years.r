@@ -15,7 +15,7 @@ set.seed(7220)
 i_am("Analyses/2A_Calculate.pairwise.synch.all.years.R")
 
 #Open post-cleaning data
-focal.cover <- read.csv(here("Data", "Tidy", "focal.cover.csv"))
+focal.cover <- read.csv(here("Data", "Tidy", "focal.cover.csv"), as.is = T)
 
 #Remove 2006, which was a pre-treatment year
 data <- focal.cover %>% filter(year != 2006)

@@ -13,7 +13,7 @@ set.seed(7220)
 i_am("Analyses/1_Metadata.and.prepping.for.synch.analyses.R")
 
 #Open raw data from the EDI data portal. These data are 2006 through 2024.
-s.raw  <- read.csv(here("Data", "Raw", "itex_sppcomp.ks.data.downloaded.8.12.2025.csv"))
+s.raw  <- read.csv(here("Data", "Raw", "itex_sppcomp.ks.data.downloaded.8.12.2025.csv"), as.is = T)
 
 #Concatenate-block, plot, and code into a replicate column
 s.raw = s.raw %>% unite(repl, c(plot, block, code), sep = "_", remove = FALSE)
