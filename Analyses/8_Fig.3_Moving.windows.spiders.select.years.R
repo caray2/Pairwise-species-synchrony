@@ -20,9 +20,7 @@ set.seed(7220)
 #Establish file location
 i_am("Analyses/8_Fig.3_Moving.windows.spiders.select.years.R")
 
-#Set working directory
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-inx <- read.csv("pairwise.synch.window.7.years.csv", as.is = TRUE)
+inx <- read.csv(here("Data", "Tidy", "pairwise.synch.window.7.years.csv"), as.is = T)
 
 #structure for clusters
 hierarchy <- data.frame(from=c( "Node",

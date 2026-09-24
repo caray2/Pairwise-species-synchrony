@@ -14,9 +14,7 @@ set.seed(7220)
 i_am("Analyses/6_Fig.1_Part.2_Average.cover.R")
 
 #Open post-cleaning tidy hit data that is only the focal species
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-cover <- read.csv("focal.cover.csv")
-
+cover <- read.csv(here("Data", "Tidy", "focal.cover.csv"), as.is = T)
 
 # Lets remove the pre-treatment data 2006, before any treatments were implemented
 cover.2007_2025 <- cover %>% filter(year!=2006)

@@ -18,9 +18,7 @@ set.seed(7220)
 #Establish file location
 i_am("Analyses/_10_Fig.5_Part.3_Q2.R")
 
-#Set working directory
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-hill.repl <-read.csv("hill.numbers.with.replicates.csv")
+hill.repl <- read.csv(here("Data", "Tidy", "hill.numbers.with.replicates.csv"), as.is = T)
 
 #Set order of treatments for all files so that it's control, warming, snow, N
 hill.repl$treatment <- factor(hill.repl$treatment, 

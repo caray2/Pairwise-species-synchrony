@@ -15,8 +15,8 @@ set.seed(7220)
 i_am("Analyses/7_Fig.2B_Multinomial.all.years.R")
 
 #Set working directory to pairwise synchrony data from the whole research period
-setwd("H:/My Drive/Synchrony/data/Tidy")
-df.all.years <- read.csv("pairwise.synch.all.years.csv", as.is = T)
+df.all.years <- read.csv(here("Data", "Tidy", "pairwise.synch.all.years.csv"), as.is = T)
+
 colnames(df.all.years)
 
 # Select focal columns for analyses
