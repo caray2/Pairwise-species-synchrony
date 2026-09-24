@@ -13,10 +13,7 @@ set.seed(7220)
 i_am("Analyses/4_Calculate.community.sync.moving.windows.with.replicates.R")
 
 #Open post-cleaning tidy data that is only the focal species
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-data.full <- read.csv("focal.cover.csv")
-
-
+data.full <- read.csv(here("Data", "Tidy", "focal.cover.csv"), as.is = T)
 
 #We want 7 year windows
 #2007-2013 #Window 1

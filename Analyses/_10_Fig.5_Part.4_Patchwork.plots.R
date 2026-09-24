@@ -8,13 +8,12 @@ library(here)
 #Establish file location
 i_am("Analyses/_10_Fig.5_Part.4_Patchwork.plots.R")
 
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-vr.plot <- readRDS("Figure.5A.rds")
-q1.2006.plot <- readRDS("Figure.5B.rds")
-q1.temporal.plot <- readRDS("Figure.5C.rds")
-q2.2006.plot <- readRDS("Figure.5D.rds")
-q2.temporal.plot <- readRDS("Figure.5E.rds")
-legend <- readRDS("Figure.5.shared.legend.rds")
+vr.plot <- readRDS(here("Graphics", "RDS.plots", "Figure.5A.rds"))
+q1.2006.plot <- readRDS(here("Graphics", "RDS.plots", "Figure.5B.rds"))
+q1.temporal.plot <- readRDS(here("Graphics", "RDS.plots", "Figure.5C.rds"))
+q2.2006.plot <- readRDS(here("Graphics", "RDS.plots", "Figure.5D.rds"))
+q2.temporal.plot <- readRDS(here("Graphics", "RDS.plots", "Figure.5E.rds"))
+legend <- readRDS(here("Graphics", "RDS.plots", "Figure.5.shared.legend.rds"))
 
 # Reduce top and bottom margins for each row
 
