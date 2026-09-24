@@ -13,7 +13,7 @@ set.seed(7220)
 i_am("Analyses/3A_Calculate.pairwise.synch.moving.windows.R")
 
 #Open post-cleaning tidy cover data that is only the focal species
-data.full <- read.csv(here("Data", "Tidy", "focal.cover.csv"))
+data.full <- read.csv(here("Data", "Tidy", "focal.cover.csv"), as.is = T)
 
 
 #We want 7 year windows

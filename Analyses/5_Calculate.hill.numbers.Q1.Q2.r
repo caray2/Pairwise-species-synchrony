@@ -12,11 +12,10 @@ library(here)
 set.seed(7220)
 
 #Establish file location
-i_am("5_Calculate.hill.numbers.Q1.Q2.R")
+i_am("Analyses/5_Calculate.hill.numbers.Q1.Q2.R")
 
 # Open post-cleaning tidy data that is only the focal species
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-s <- read.csv("focal.cover.csv") # This is the hit count data for focal species
+s <- read.csv(here("Data", "Tidy", "focal.cover.csv"), as.is = T) # This is the hit count data for focal species
 
 # Calculate Hill numbers
 # q1 is Shannon diversity (exponential of Shannon entropy)

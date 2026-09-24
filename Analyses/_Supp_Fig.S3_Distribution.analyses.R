@@ -18,9 +18,7 @@ library(here)
 i_am("Analyses/_Supp_Fig.S3_Distribution.analyses.R")
 
 # Load & wrangle data
-setwd("H:/My Drive/Synchrony/Data/Tidy")
-dens <- read.csv("pairwise.synch.window.7.years.replicates.csv",
-                 as.is = TRUE)
+dens <- read.csv(here("Data", "Tidy", "pairwise.synch.window.7.years.replicates.csv"), as.is = T)
 
 # Set up plotting aesthetics
 treatment_colors <- c("XXX" = "grey40",
