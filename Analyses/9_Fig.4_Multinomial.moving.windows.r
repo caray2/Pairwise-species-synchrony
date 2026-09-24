@@ -148,8 +148,7 @@ year.pairs.df$reporting <- ifelse(year.pairs.df$is.significant == 1,
                                            year.pairs.df$p.value),
           "")
 
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(year.pairs.df, "Fig.4_emmeans.prob.contrasts.multinom.moving.windows.csv")
+write_csv(year.pairs.df, here("Posthoc.tests", "Fig.4_emmeans.prob.contrasts.multinom.moving.windows.csv"))
 
 # Post-hoc Tests: Compare Slopes
 
@@ -210,8 +209,7 @@ slope.pairs.df$reporting <- ifelse(slope.pairs.df$is.significant == 1,
                                            slope.pairs.df$p.value),
                                    "")
 
-setwd("H:/My Drive/Synchrony/Posthoc.tests")
-write_csv(slope.pairs.df, "Fig.4_emmeans.slope.contrasts.multinom.moving.windows.csv")
+write_csv(slope.pairs.df, here("Posthoc.tests", "Fig.4_emmeans.slope.contrasts.multinom.moving.windows.csv"))
 
 # Get Predicted Probabilities
 
@@ -345,8 +343,9 @@ scale_y_continuous(
 
 multinom.moving.win
 
-setwd("H:/My Drive/Synchrony/Graphics")
-ggsave("Fig.4_moving.window.multinomial.png", multinom.moving.win, width = 7.5, height = 8.5, dpi = 600)
+#Save graphic
+ggsave(filename = here("Graphics", "Fig.4_moving.window.multinomial.png"),
+       plot = multinom.moving.win, width = 7.5, height = 8.5, dpi = 600)
 
 # Diagnostic Checks
 

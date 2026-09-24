@@ -334,5 +334,5 @@ vr.plot <-
 vr.plot
 
 # Save the plot as an RDS so I can combine it with other plots later
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-saveRDS(vr.plot, "Figure.5A.rds")
+saveRDS(filename = here("Graphics", "RDS.plots", "Figure.5A.rds"), 
+        plot = vr.plot)

@@ -189,9 +189,13 @@ graph <- ggplot(effects_df, aes(x=xstart, y=ystart, xend=xend, yend=yend)) + #se
 
 graph
 
-setwd("H:/My Drive/Synchrony/Graphics")
-ggsave("Fig.2A_All.years.spiders.png", graph, width = 2.9, height = 4.5, dpi = 600)
+#Save as a png
+ggsave(filename = here("Graphics", "Fig.2A_All.years.spiders.png"),
+       plot = graph,
+       width = 2.9,
+       height = 4.5,
+       dpi = 600)
 
 #Save as an RDS
-setwd("H:/My Drive/Synchrony/Graphics/RDS.plots")
-saveRDS(graph, "Figure.2A_All.years.spiders.rds")
+saveRDS(filename = here("Graphics", "RDS.plots", "Figure.2A_All.years.spiders.rds"), 
+        plot = graph)

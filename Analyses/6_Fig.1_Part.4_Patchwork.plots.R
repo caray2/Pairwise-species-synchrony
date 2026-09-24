@@ -11,16 +11,14 @@ library(here)
 i_am("Analyses/6_Fig.1_Part.4_Patchwork.plots.R")
 
 #JPGs - Read and upscale field photo
-setwd("H:/My Drive/Synchrony/Graphics")
-Fig.1B_img <- image_read("Fig.1B_Field.photo.cropped.jpg")
+Fig.1B_img <- image_read(here("Graphics", "Fig.1B_Field.photo.cropped.jpg"))
 Fig.1B_img <- image_scale(Fig.1B_img, "3000")  # Upscale to 3000 pixels width
 Fig.1B <- as.raster(Fig.1B_img)
 
 #PNGs
-setwd("H:/My Drive/Synchrony/Graphics")
-Fig.1A <-readPNG("Fig.1A_Syn.vs.Comp.png")
-Fig.1C <-readPNG("Fig.1C_With.plants.avg.cover.png")
-Fig.1D <-readPNG("Fig.1D_With.plants.demo.plot.png")
+Fig.1A <-readPNG(here("Graphics", "Fig.1A_Syn.vs.Comp.png"))
+Fig.1C <-readPNG(here("Graphics", "Fig.1C_With.plants.avg.cover.png"))
+Fig.1D <-readPNG(here("Graphics", "Fig.1D_With.plants.demo.plot.png"))
 
 # Convert photos to ggplot objects
 gg.Fig.1A <- ggplot() + 
@@ -66,6 +64,5 @@ combined.plot <- row1 / row2 +
 combined.plot
 
 # Save combined figure
-setwd("H:/My Drive/Synchrony/Graphics")
-ggsave("Fig.1_Full.plot.png", combined.plot,
+ggsave(here("Graphics", "Fig.1_Full.plot.png"), combined.plot,
        width = 6.5, height = 6.5, dpi = 600)

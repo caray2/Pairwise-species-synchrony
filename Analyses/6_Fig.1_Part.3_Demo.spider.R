@@ -161,6 +161,6 @@ graph
 
 
 #save graphics
-setwd("H:/My Drive/Synchrony/Graphics")
-ggsave(plot=graph, "Fig.1D_demospider.png", height=3, width=3, units="in", dpi=800)
-
+ggsave(filename = here("Graphics", "Fig.1D_demospider.png"),
+       plot=graph,
+       height=3, width=3, units="in", dpi=800)
